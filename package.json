@@ -1,0 +1,15 @@
+{
+  "name": "KiwiStatBot",
+  "version": "1.0.0",
+  "description": "KiwiStatBot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Hoto Cocoa (Lee Sung Jae)",
+  "license": "Copyright",
+  "dependencies": {
+    "node-telegram-bot-api": "^0.27.0",
+    "twitter": "^1.7.0"
+  }
+}
