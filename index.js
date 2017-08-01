@@ -8,7 +8,7 @@ const chatId = config.teleChatId;
 const bot = new TelegramBot(token, {polling: true});
 
 
-client.stream('statuses/filter', {follow: config.tweetUser'},  function(stream) {
+client.stream('statuses/filter', {follow: config.tweetUser},  function(stream) {
 	stream.on('data', function(tweet) {
 		console.log(tweet);
 		bot.sendMessage(chatId, "Tweet Posted : " + tweet.text);
