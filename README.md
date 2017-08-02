@@ -1,6 +1,6 @@
 # Twitter-Watch_to_Telegram
 
-## Configure
+## Configure (config.json)
 ```
 {
 	"teleToken": "asdf",
