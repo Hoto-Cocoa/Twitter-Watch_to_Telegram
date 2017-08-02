@@ -1,12 +1,12 @@
 {
-  "name": "KiwiStatBot",
+  "name": "twtt",
   "version": "1.0.0",
-  "description": "KiwiStatBot",
+  "description": "Twitter Watch to Telegram",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
-  "author": "Hoto Cocoa (Lee Sung Jae)",
+  "author": "Hoto Cocoa",
   "license": "Copyright",
   "dependencies": {
     "node-telegram-bot-api": "^0.27.0",
