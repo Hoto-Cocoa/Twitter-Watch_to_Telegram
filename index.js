@@ -14,7 +14,7 @@ const twitter = new (require('twitter'))(Config.Twitter);
 			screen_name: d.screen_name
 		}));
 	}
-	twitter.stream('statuses/filter', { follow: (await Promise.all(users)).map(e => e.id_str).join(',') }, async stream => {
+	if(users.length) twitter.stream('statuses/filter', { follow: (await Promise.all(users)).map(e => e.id_str).join(',') }, async stream => {
 		stream.on('data', async tweet => {
 			let text = tweet.display_text_range ? tweet.text.substring(...tweet.display_text_range) : tweet.text;
 			let user = `${tweet.user.name}(@${tweet.user.screen_name})`;
